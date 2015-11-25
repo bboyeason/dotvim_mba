@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/eason/vs_workspace/DmGpsTool.git/.git'
+let g:netrw_dirhist_2='/Users/eason/source_code/pbj20_internal3G/hc-mr2-3g/hardware/libhardware_legacy/power'
+let g:netrw_dirhist_3='/Users/eason/source_code/ZEJ10/hardware/libhardware'
+let g:netrw_dirhist_4='/Users/eason/source_code/ZEJ10/hardware/libhardware/modules'
+let g:netrw_dirhist_5='/Users/eason/source_code/ZEJ10/hardware/libhardware/modules/power'
+let g:netrw_dirhist_6='/Users/eason/Dropbox/workspace/c/sizeof'
+let g:netrw_dirhist_7='/Users/eason/tmp'
+let g:netrw_dirhist_8='/Users/eason/.bash_sessions'
+let g:netrw_dirhist_9='/Users/eason/.local'
