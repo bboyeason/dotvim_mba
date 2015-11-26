@@ -55,17 +55,6 @@ let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
-""
-"PowerLine
-""
-set guifont=Inconsolata\ for\ Powerline:h15
-let g:Powerline_symbols = 'fancy'
-set encoding=utf-8
-set t_Co=256
-set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
-set termencoding=utf-8
-
 "MACVIM
 "if has("gui_running")
 "    let s:uname = system("uname")
@@ -75,6 +64,12 @@ set termencoding=utf-8
 "endif
 
 "Vim-PowerLine
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
 set rtp+=/Library/Python/2.7/site-packages/powerline/bindings/vim
 
 " These lines setup the environment to show graphics and colors correctly.
@@ -98,3 +93,8 @@ endif
 set laststatus=2 " Always display the statusline in all windows
 set guifont=Inconsolata\ for\ Powerline:h14
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+""
+"YouCompleteMe
+""
+let g:ycm_confirm_extra_conf = 0
