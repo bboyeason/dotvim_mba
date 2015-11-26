@@ -1,3 +1,21 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'Valloric/YouCompleteMe'
+
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+Plugin 'scrooloose/nerdtree'
+" 这个插件可以显示文件的Git增删状态
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+call vundle#end()
+filetype plugin indent on
 syntax on
 filetype on
 set ic
@@ -26,6 +44,9 @@ let Tlist_Use_Right_Window = 1
 "NERD Tree
 ""
 map <C-n> :NERDTreeToggle<CR>
+"Auto open NERD Tree window once you execute vim without any parameters
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "Auto close NERD Tree window once you close file
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
 "let g:NERDTreeMinimalUI = 1
@@ -44,6 +65,7 @@ set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 set term=xterm-256color
 set termencoding=utf-8
+
 "MACVIM
 "if has("gui_running")
 "    let s:uname = system("uname")
